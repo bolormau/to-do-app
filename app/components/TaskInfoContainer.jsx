@@ -1,10 +1,7 @@
-'use client'
-
-import { useState } from "react";
 import { ClearCompletedButton } from "./Button";
 
 export const TaskInfoContainer = (props) => {
-  const { allTaskCount=0, completedTaskCount=0, clearCompletedOnclickHandler } = props;
+  const { allTaskCount, completedTaskCount, clearCompletedOnclickHandler } = props;
   let s = completedTaskCount > 1 ? "s" : "";
 
   return (
